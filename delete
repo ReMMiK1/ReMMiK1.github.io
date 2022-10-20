@@ -1,0 +1,2 @@
+git rm --cached index.html
+git commit -m "remove index.html"
