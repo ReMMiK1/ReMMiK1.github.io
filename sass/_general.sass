@@ -1,0 +1,355 @@
+@import "variables"
+@import "mixins"
+@import "media"
+.header
+	height: 110px
+	padding: 17px 200px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&_menu
+		display: inline-block
+		&_navbar
+			margin-left: 400px
+			width: 400px
+			display: flex
+			justify-content: space-around
+			align-items: center
+			gap: 5px
+			&_item
+				display: block
+				border: solid 1px #ffffff00
+				padding: 7px 10px
+				box-shadow: inset
+				font-family: 'Sofia Pro Bold'
+				font-size: 16px
+				font-weight: 700
+				color: #000
+				text-decoration: none
+				&:hover
+					border: solid 1px #898989
+					color: black
+	&_btn
+		@include btn
+		width: 174px
+		height: 48px
+		padding: 12px
+		border-radius: 5px
+		&_txt
+			text-align: center
+			font-size: 16px
+			font-weight: 700
+			color: #000000
+.promo
+	height: 528px
+	background: url(../img/bg/main_bg.jpg) center center/cover no-repeat
+	padding-top: 120px
+	&_title
+		font-family: 'Sofia Pro Bold'
+		font-size: 48px
+		font-weight: 700
+		color: #ffffff
+		text-align: center
+	&_subtitle
+		width: 750px
+		margin: 0 auto
+		margin-top: 35px
+		font-family: 'Sofia Pro Regular'
+		font-size: 18px
+		line-height: 24px
+		font-weight: 400
+		color: #ffffff
+		text-align: center
+	&_btns
+		margin-top: 60px
+		display: flex
+		justify-content: center
+		gap: 17px
+		&_item
+			display: block
+			width: 158px
+			height: 48px
+			border: solid 1px $grey
+			border-radius: 3px
+			font-family: 'Sofia Pro Bold'
+			font-size: 16px
+			font-weight: 700
+			color: #ffffff
+			text-align: center
+			@include btn
+			&:hover
+				width: 158px
+				border-radius: 3px
+				color: #000000
+.bikes
+	height: 730px
+	padding: 75px 194px 58px
+	@include title
+	&_products
+		margin-top: 65px
+		display: flex
+		justify-content: space-between
+		gap: 26px
+		&_item
+			min-height: 340px
+			display: flex
+			flex-direction: column
+			gap: 0px
+			border: solid 1px $grey
+			border-radius: 3px 
+			text-decoration: none 
+			&_img
+				padding: 49px 54px 0
+				height: 270px
+			&_divider
+				height: 1px
+				width: 100%
+				background-color: $grey
+			&_name
+				height: 70px
+				text-align: center
+				padding-top: 20px
+				font-family: 'Sofia Pro Bold'
+				font-size: 20px
+				font-weight: 700
+				color: #000000
+				&:hover
+					background-color: $yellow
+				&:active
+					background-color: #b59d01
+	&_btn
+		margin: 0 auto
+		margin-top: 67px
+		height: 48px
+		width: 208px
+		font-family: 'Sofia Pro Bold'
+		font-size: 16px
+		font-weight: 700
+		color: #000000
+		text-align: center
+		border-radius: 7px
+		border: solid 1px $grey
+		@include btn
+.tools
+	height: 660px
+	padding: 76px 192px 0
+	background-color: #f9f9f9
+	@include title
+	&_tools
+		margin-top: 60px
+		display: flex
+		justify-content: space-between
+		gap: 27px
+		background-color: #f9f9f9
+		&_item
+			border: solid 1px $grey
+			border-radius: 3px
+			padding: 36px 48px 36px
+			&_img
+				width: 48px
+				height: 48px
+				position: relative
+				background-color: $yellow
+				border-radius: 100%
+				img
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%,-50%)
+			&_subtitle
+				margin-top: 23px
+				font-family: 'Sofia Pro Bold'
+				font-size: 24px
+				font-weight: 700
+				color: #000000
+			&_txt
+				margin-top: 36px
+				font-family: 'Sofia Pro Regular'
+				font-size: 16px
+				line-height: 26px
+				font-weight: 400
+				color: #8f8f8f
+.reviews
+	height: 593px
+	@include title
+	&_reviews
+		margin: 70px 193px
+		display: flex
+		justify-content: space-between
+		gap: 26px
+		&_item
+			padding: 43px 30px
+			border: solid 1px $grey
+			border-radius: 3px
+			&_stars
+				display: flex
+				gap: 10px
+			&_txt
+				margin-top: 30px
+				font-family: 'Sofia Pro Regular'
+				font-size: 14px
+				line-height: 24px
+				font-weight: 400
+				color: #525252
+			&_cstmr
+				margin-top: 36px
+				font-family: 'Sofia Pro Bold'
+				font-size: 16px
+				font-weight: 700
+				color: #000000
+.store
+	height: 445px
+	padding: 29px 125px 0 193px
+	display: flex
+	justify-content: space-between
+	gap: 111px
+	background-color: #f9f9f9
+	&_img
+		width: 552px
+		height: 386px
+	&_header
+		width: 533px
+		padding-top: 50px
+		@include title
+		&_title
+			text-align: left
+		&_subtitle
+			text-align: left
+.contact
+	height: 748px
+	padding: 90px 193px 65px
+	display: flex
+	justify-content: space-between
+	gap: 70px
+	&_header
+		display: flex
+		flex-direction: column
+		width: 520px
+		@include title
+		&_title
+			text-align: left
+		&_subtitle
+			text-align: left
+		&_subtitleinfo
+			margin-top: 66px
+			font-family: 'Sofia Pro Bold'
+			font-size: 24px
+			font-weight: 700
+			color: #000000
+		&_info
+			margin-top: 15px
+			&_item
+				margin: 23px 0 0 42px
+				font-family: 'Sofia Pro Regular'
+				font-size: 18px
+				font-weight: 400
+				color: #505050
+				position: relative
+				&_1
+					@include before
+					&::before	
+						background: $yellow url(../icons/mail.png) center center/45% 45% no-repeat
+				&_2
+					@include before
+					&::before	
+						background: $yellow url(../icons/phone.png) center center/45% 45% no-repeat
+				&_3
+					@include before
+					&::before	
+						background: $yellow url(../icons/geo.png) center center/45% 45% no-repeat
+	&_form
+		background-color: #f9f9f9
+		width: 552px
+		height: 593px
+		border: solid 1px $grey
+		padding: 43px 52px
+		&_subtitle
+			margin-bottom: 21px
+			font-family: 'Sofia Pro Bold'
+			font-size: 24px
+			font-weight: 700
+			color: #000000
+		&_input
+			margin-top: 21px
+			width: 100%
+			min-height: 56px
+			padding-right: 25px
+			border-radius: 3px
+		.large
+			min-height: 185px
+		&_btn
+			margin-top: 26px
+			height: 48px
+			font-family: 'Sofia Pro Bold'
+			font-size: 16px
+			font-weight: 700
+			color: #000000
+			background-color: $yellow
+			border-radius: 3px
+			border: none
+			&:active
+				background-color: #b59d01
+.footer
+	height: 419px
+	&_main
+		height: 332px
+		padding: 50px 200px
+		display: flex
+		justify-content: space-between
+		background-color: #f9f9f9
+		&_info
+			width: 416px
+			&_txt
+				margin-top: 50px
+				font-family: 'Sofia Pro Regular'
+				font-size: 16px
+				line-height: 26px
+				font-weight: 400
+				color: #8f8f8f
+		&_navbar
+			display: flex
+			&_col
+				width: 195px
+				&_subtitle
+					font-family: 'Sofia Pro Bold'
+					font-size: 18px
+					font-weight: 700
+					color: #000000
+				&_links
+					margin-top: 32px
+					display: flex
+					flex-direction: column
+					&_item
+						margin-top: 13px
+						font-family: 'Sofia Pro Regular'
+						font-size: 16px
+						font-weight: 400
+						color: #8f8f8f
+						text-decoration: none
+						&:hover
+							color: $yellow
+	&_docs
+		height: 87px
+		padding: 0 200px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&_copyright
+			width: 416px
+			font-family: 'Sofia Pro Regular'
+			font-size: 16px
+			font-weight: 400
+			color: #8f8f8f
+		&_links
+			display: flex
+			justify-content: space-between
+			&_item
+				display: block
+				width: 195px
+				font-family: 'Sofia Pro Regular'
+				font-size: 16px
+				font-weight: 400
+				color: #8f8f8f
+				text-decoration: none
+				&:hover
+					color: $yellow

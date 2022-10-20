@@ -1,0 +1,36 @@
+@mixin btn
+    display: block
+    background-color: rgba(0,0,0,0)
+    text-decoration: none
+    padding-top: 10px
+    &:hover
+        background-color: $yellow
+        color: black
+    &:active
+        background-color: #b59d01
+@mixin title
+    &_title
+        font-family: 'Sofia Pro Bold'
+        font-size: 48px
+        font-weight: 700
+        color: #000000
+        text-align: center
+    &_subtitle
+        margin-top: 35px
+        font-family: 'Sofia Pro Regular'
+        font-size: 18px
+        line-height: 24px
+        font-weight: 400
+        color: #8f8f8f
+        text-align: center
+@mixin before
+    &::before
+        content: ""
+        display: block
+        width: 32px
+        height: 32px
+        border-radius: 100%
+        position: absolute
+        top: 50%
+        left: -41px
+        transform: translateY(-50%)
